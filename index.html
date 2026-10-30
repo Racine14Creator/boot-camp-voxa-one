@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/fontawesome.min.css"
+    />
+
+    <style>
+      button {
+        /* width: fit-content; */
+        cursor: pointer;
+        padding: 10px 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        border: none;
+      }
+      .rounded {
+        border-radius: 10px;
+      }
+
+      .white {
+        background-color: white;
+        color: black;
+      }
+
+      .red {
+        background-color: red;
+        color: white;
+      }
+      .green {
+        background-color: green;
+        color: white;
+      }
+
+      .black-parent {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Logo of the company</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="messages.html">Message <span>23</span></a>
+          </li>
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="contact-me.html">Contact</a></li>
+          <li><a href="button.html">Button</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is the main content of my portfolio.</p>
+    </main>
+
+    <div class="black-parent">
+      <h3 class="rounded">Explication sur le bouton</h3>
+      <button class="rounded white">Button</button>
+      <button class="red">
+        Avec Angles
+        <img src="./user.png" width="24px" alt="User" />
+      </button>
+      <button class="green">
+        Utilisateur
+        <i class="fa-solid fa-circle-user"></i>
+      </button>
+    </div>
+
+    <section>
+      <h2>My Services</h2>
+      <p>Here are some of the services I offer.</p>
+    </section>
+
+    <div>
+      This are some of the services I offer. You can contact me for more
+      information.
+    </div>
+  </body>
+</html>

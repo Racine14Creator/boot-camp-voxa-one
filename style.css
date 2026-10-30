@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  overflow: hidden;
+  width: 400px;
+  height: 800px;
+  margin: 50px auto;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  color: grey;
+  justify-content: space-between;
+  padding: 35px 40px;
+}
+.header a {
+  color: grey;
+  text-decoration: none;
+}
+.messages {
+  background-color: #f1f1f1;
+  padding: 40px 10px 0 10px;
+  border-radius: 40px 40px 0 0;
+}
+.moment {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: light;
+  color: grey;
+  margin-top: -55px;
+}
+.message {
+  padding: 20px;
+  margin: 10px 0;
+}
+.message.me {
+  /* width: fit-content; */
+  background-color: #d1e7dd;
+  margin-left: auto;
+  margin-right: 10px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.message.sender {
+  background-color: #1666b1;
+  color: white;
+  margin-right: auto;
+  margin-left: 10px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.input {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -8px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #f0ededa9;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input button.plus {
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #1666b1;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input button.send {
+  width: 60px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #1666b1;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
